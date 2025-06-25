@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/2a3a3d0268.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js" crossorigin="anonymous"></script>
+    <title>Travel Recommendation</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <i class="fa-solid fa-plane-departure"></i>
+        <h1>Travel Carlos Uribe</h1>
+      </div>
+      <nav>
+        <a href="./travel_recommendation.html">Home</a>
+        <a href="./travel_about.html">About Me</a>
+        <a href="./travel_contact.html">Contact Us</a>
+      </nav>
+      <div>
+        <div class="search-container">
+          <i class="icon fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            class="input-search"
+            id="input-search"
+            placeholder="Search destinations..."
+          />
+        </div>
+        <button type="submit" id="search-button" onclick="searchDestinations()">
+          Search
+        </button>
+        <button type="button" id="clear-button" onclick="clearSearch()">
+          Clear
+        </button>
+      </div>
+    </header>
+    <main class="container">
+      <div>
+        <h1>Travel Recommendation</h1>
+        <p>Welcome to your travel contact page!</p>
+      </div>
+
+      <form action="">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
