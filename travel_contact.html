@@ -41,23 +41,36 @@
       </div>
     </header>
     <main class="container">
-      <div>
-        <h1>Travel Recommendation</h1>
-        <p>Welcome to your travel contact page!</p>
+      <div class="container-form">
+        <h1>Contact Us</h1>
+        <p>
+          Thank you for your comments, we will get in touch with you shortly.!
+        </p>
       </div>
-
-      <form action="">
+      <div class="container-form">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
+        <input type="text" id="name" name="name" required class="input-form" />
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          class="input-form"
+        />
 
         <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          required
+          class="input-form"
+        ></textarea>
 
-        <button type="submit">Submit</button>
-      </form>
+        <button type="submit" onclick="onSubmitForm()">Submit</button>
+      </div>
     </main>
   </body>
 </html>

@@ -39,22 +39,32 @@ header {
     align-items: center;
     gap: 10px;
   }
-  button {
-    padding: 10px 15px;
-    background-color: #04152c;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+}
 
-  button:hover {
-    background-color: #32445c;
-  }
+button {
+  padding: 10px 15px;
+  background-color: #04152c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #32445c;
 }
 
 .input-search {
   width: 300px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-form {
+  width: 100%;
+  box-sizing: border-box;
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -79,4 +89,92 @@ header {
   flex-direction: row;
   align-items: center;  
   justify-content: space-around;
+}
+
+.container-about{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  justify-content: space-around;
+}
+
+.container-form{
+  border: 1px solid #fffefe;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 450px;
+  background-color: rgba(149, 181, 245, 0.89);
+}
+
+.container-recommendation{
+  border: 1px solid #fffefe;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 450px;
+  max-height: 700px;
+  overflow: auto;
+  background-color: rgba(149, 181, 245, 0.89);
+}
+
+.container-about-team{
+  border: 1px solid #fffefe;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  height: 200px;
+  width: 90%;
+  background-color: rgba(149, 181, 245, 0.89);
+}
+
+.card{
+  border: 1px solid #fffefe;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 200px;
+  background-color: rgba(149, 181, 245, 0.89);
+  p{
+    color: white;
+    text-align: center;
+    border: 2px solid #fffefe;
+    border-radius: 10px;
+    padding: 5px; 
+     background-color: #04152c;
+  }
+}
+
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+.card-recomendation {
+  border: 1px solid #fffefe;
+  border-radius: 10px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  background-color: rgba(149, 181, 245, 0.89);
+  img{
+    border-radius: 10px 10px 0 0;
+  }
+  h2, p {
+    padding: 0 0 10px 10px;
+  }
 }
